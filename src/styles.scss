@@ -1,10 +1,8 @@
-@import 'assets/HTWF/style.css';
 @import 'assets/HTWF/css/content-box.css';
 @import 'assets/HTWF/css/image-box.css';
 @import 'assets/HTWF/css/animations.css';
 @import 'assets/HTWF/css/components.css';
-/*@import 'assets/HTWF/scripts/font-awesome/css/font-awesome.css';*/
-
+@import 'assets/HTWF/style.css';
 
 /* You can add global styles to this file, and also import other style files */
 /*
@@ -2629,3 +2627,5 @@ RESPONSIVE
     float: left;
   }
 }
+
+@import 'assets/HTWF/scripts/flexslider/flexslider.css';

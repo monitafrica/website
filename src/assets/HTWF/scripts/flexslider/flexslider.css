@@ -134,7 +134,6 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-    *
     height: 0;
 }
 
@@ -268,6 +267,10 @@ body .flex-direction-nav a.flex-next:before {
     }
 
 .flex-control-nav {
+  display: none!important;
+}
+
+.flex-control-nav {
     width: 100%;
     position: absolute;
     bottom: -40px;
@@ -280,7 +283,6 @@ body .flex-direction-nav a.flex-next:before {
         margin: 0 6px;
         display: inline-block;
         zoom: 1;
-        *
         display: inline;
         height: auto !important;
     }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'website';
+  currentUrl = '';
+
+  constructor(private router: Router) {
+    router.events.subscribe(() => {
+      this.currentUrl = document.location.pathname;
+    });
+  }
 }

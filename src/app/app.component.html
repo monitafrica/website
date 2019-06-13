@@ -10,7 +10,7 @@
           <button type="button" class="navbar-toggle">
             <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" [routerLink]="['/']" >
             <img class="logo-default" src="assets/logo.png" alt="logo" />
             <img class="logo-retina" src="assets/logo.png" alt="logo" />
           </a>
@@ -33,23 +33,22 @@
                 <!--</ul>-->
               <!--</li>-->
 
-              <li class="dropdown">
-                <a href="index.html#" role="button">Home</a>
+              <li class="dropdown {{currentUrl === '/' ? 'active' : ''}}">
+                <a [routerLink]="['/']" role="button">Home</a>
               </li>
-              <li class="dropdown">
-                <a href="index.html#" role="button">About</a>
+              <li class="dropdown {{currentUrl === '/about' ? 'active' : ''}}">
+                <a [routerLink]="['/about']" role="button">About</a>
               </li>
-              <li class="dropdown">
-                <a href="index.html#" role="button">Services</a>
+              <li class="dropdown {{currentUrl === '/service' ? 'active' : ''}}">
+                <a [routerLink]="['/service']" role="button">Services</a>
               </li>
-              <li class="dropdown">
-                <a href="index.html#" role="button">Portfolio</a>
+
+              <li class="dropdown {{currentUrl === '/portfolio' ? 'active' : ''}}">
+                <a [routerLink]="['/portfolio']" role="button">Portfolio</a>
               </li>
-              <li class="dropdown">
-                <a href="index.html#" role="button">Team</a>
-              </li>
-              <li class="dropdown">
-                <a href="index.html#" role="button">Contact Us</a>
+
+              <li class="dropdown {{currentUrl === '/contact' ? 'active' : ''}}">
+                <a [routerLink]="['/contact']" role="button">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -64,13 +63,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 footer-center text-left">
-          <img width="120" src="assets/images/logo.png" alt="" />
+          <img width="120" src="assets/logo.png" alt="" />
         </div>
         <div class="col-md-6 footer-left text-left">
-          <p>Collins Street West 8007, San Fransico, United States.</p>
+          <span>MonitAfrica Solutions Company Limited</span> <br/>
+          <span>Afya House Building | Ground Floor, Plot No. 47</span><br/>
+          <span>Mlalakuwa Road, Mikocheni</span><br/>
+          <span>P.O.Box 105116,</span><br/>
+          <span>Msasani – Dar es Salaam, Tanzania</span><br/>
+          <!--<p>Collins Street West 8007, San Fransico, United States.</p>-->
           <div class="tag-row">
-            <span>support@company.com</span>
-            <span>+02 3205550678</span>
+            <span>nmwenda@monitafrica.com</span>
+            <span>+255765390439</span>
           </div>
         </div>
         <div class="col-md-3 footer-left text-right text-left-sm">
@@ -93,7 +97,7 @@
     </div>
     <div class="row copy-row">
       <div class="col-md-12 copy-text">
-        © 2018 Signflow - Multipurpose & Tech Business Template <span>Handmade by <a href="http://schiocco.io/">schiocco.io</a></span>
+        © {{ 2019 }} Monitafrica LTD
       </div>
     </div>
   </div>
