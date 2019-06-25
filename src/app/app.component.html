@@ -18,20 +18,6 @@
         <div class="collapse navbar-collapse">
           <div class="nav navbar-nav navbar-right">
             <ul class="nav navbar-nav">
-              <!--<li class="dropdown active">-->
-                <!--<a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button">Home <span class="caret"></span></a>-->
-                <!--<ul class="dropdown-menu multi-level">-->
-                  <!--<li><a href="index-main.html">Main</a></li>-->
-                  <!--<li><a href="index-freelancer.html">Freelancer</a></li>-->
-                  <!--<li><a href="index-business.html">Business</a></li>-->
-                  <!--<li><a href="index-video.html">Video</a></li>-->
-                  <!--<li><a href="index-cooworking.html">Cooworking</a></li>-->
-                  <!--<li><a href="index-fullpage.html">Fullpage</a></li>-->
-                  <!--<li><a href="index-mobile.html">Mobile</a></li>-->
-                  <!--<li><a href="index-application.html">Application</a></li>-->
-                  <!--<li><a href="index.html">Intro</a></li>-->
-                <!--</ul>-->
-              <!--</li>-->
 
               <li class="dropdown {{currentUrl === '/' ? 'active' : ''}}">
                 <a [routerLink]="['/']" role="button">Home</a>
@@ -39,12 +25,13 @@
               <li class="dropdown {{currentUrl === '/about' ? 'active' : ''}}">
                 <a [routerLink]="['/about']" role="button">About</a>
               </li>
-              <li class="dropdown {{currentUrl === '/service' ? 'active' : ''}}">
-                <a [routerLink]="['/service']" role="button">Services</a>
-              </li>
 
-              <li class="dropdown {{currentUrl === '/portfolio' ? 'active' : ''}}">
-                <a [routerLink]="['/portfolio']" role="button">Portfolio</a>
+              <li class="dropdown  {{(currentUrl === '/product/biz_erp' || currentUrl === '/product/group_saving') ? 'active' : ''}}">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Products <span class="caret"></span></a>
+                <ul class="dropdown-menu multi-level">
+                  <li><a [routerLink]="['/product', 'group_saving']">Group Saving</a></li>
+                  <li><a [routerLink]="['/product', 'biz_erp']">Biz ERP</a></li>
+                </ul>
               </li>
 
               <li class="dropdown {{currentUrl === '/contact' ? 'active' : ''}}">
