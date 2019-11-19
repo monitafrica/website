@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import {GroupSavingComponent} from "./product/group_saving/group_saving.component";
-import {BizErpComponent} from "./product/biz_erp/biz_erp.component";
+import {GroupSavingComponent} from './product/group_saving/group_saving.component';
+import {BizErpComponent} from './product/biz_erp/biz_erp.component';
 
 @NgModule({
   declarations: [
