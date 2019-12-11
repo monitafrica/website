@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import {GroupSavingComponent} from './product/group_saving/group_saving.component';
 import {BizErpComponent} from './product/biz_erp/biz_erp.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {BizErpComponent} from './product/biz_erp/biz_erp.component';
     AboutComponent,
     ContactComponent,
     GroupSavingComponent,
-    BizErpComponent
+    BizErpComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
